@@ -46,13 +46,13 @@ public class Executable {
 			escaner.nextLine();
 
 			switch (option) {
-					case 1:
+					case 1:fixture();
 
 						break;
-					case 2:
+					case 2:preloadInfo();
 
 						break;
-					case 3:
+					case 3:narracionPartido();
 
 						break;
 					case 4:
@@ -83,4 +83,15 @@ public class Executable {
 
     }
 
+    public void fixture() {
+        controladora.fixture();
+    }
+
+    public void preloadInfo() {
+        System.out.println(controladora.precargarInformacion());
+    }
+
+    public void narracionPartido() {
+        System.out.println(controladora.realizarPartido());
+    }
 }
