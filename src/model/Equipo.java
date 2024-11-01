@@ -15,8 +15,10 @@ public class Equipo {
 
     public void agregarJugador(JugadorHockey jugador) {
         for (int i = 0; i < jugadores.length; i++) {
-            if(jugadores[i]==null)
-            jugadores[i] = jugador;
+            if(jugadores[i]==null) {
+                jugadores[i] = jugador;
+                break;
+            }
         }
     }
 
