@@ -37,6 +37,6 @@ public class JugadorHockey extends Persona implements IDesplazarseEnPistaConPalo
 
     @Override
     public String pasarPelota() {
-        return nombre + " pasa la pelota a ";
+        return  " pasa la pelota a ";
     }
 }
